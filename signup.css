@@ -1,0 +1,70 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url("background.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 70%;
+    max-width: 400px;
+    min-height: 95vh;
+    border-radius: 0.75rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+    border: 1px solid black;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 0 1.25rem;
+    width: 90%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover{
+    color: black;
+}
+
+h2,p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+p a{
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 0.25rem;
+}
+
+p a:hover{
+    text-decoration: underline;
+}
+
+.options{
+    width: 90%;
+    margin: 1.25rem 0 0 1.25rem;
+}
+
+.options input:focus{
+    background-color: #f8f9fa;
+    border: 2px solid #007bff;
+    outline: none;
+}
+
+@media (max-width: 576px){
+    .container{
+        width: 90%;
+        min-height: auto;
+    }
+}

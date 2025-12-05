@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Login.png"/>
+    <title>SignUp Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Signup.css"/>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form action="/signup" method="POST">
+            <div class="mb-3 options">
+                <label for="firstname" class="form-label">First Name</label>
+                <input type="text" name="firstname" id="firstname" placeholder="First Name" class="form-control" required/>
+            </div>
+            <div class="mb-3 options">
+                <label for="lastname" class="form-label">Last Name</label>
+                <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Last Name" required/>
+            </div>
+            <div class="mb-3 options">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="example@gmail.com" class="form-control" required/>
+            </div>
+            <div class="mb-3 options">
+                <label for="number" class="form-label">Phone Number</label>
+                <input type="number" class="form-control" id="number" name="phone no." placeholder="Phone Number" required/>
+            </div>
+            <div class="mb-3 options">
+                <label for="pass" class="form-label">Password</label>
+                <input type="password" id="pass" class="form-control" name="password" placeholder="Your Password" required/>
+            </div>
+            <div class="mb-3 options">
+                <label for="confirmpass" class="form-label">Confirm Password</label>
+                <input type="password" id="confirmpass" class="form-control" name="password" placeholder="Confirm Your Password" required/>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+        <p>Already have an account?<a href="login.html">Login</a></p>
+    </div>
+</body>
+</html>
